@@ -1,0 +1,45 @@
+{
+  "name": "@solanafish/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Satyam Bansal",
+    "email": "satyamsgsits1994@gmail.com",
+    "url": "https://satyambnsal.com"
+  },
+  "scripts": {
+    "frontend:build": "yarn workspace @solanafish/frontend build --max-old-space-size=12288",
+    "frontend:start": "yarn workspace @solanafish/frontend start",
+    "frontend:dev": "yarn workspace @solanafish/frontend dev",
+    "frontend:lint": "yarn workspace @solanafish/frontend lint",
+    "backend:build": "yarn workspace @solanafish/api build",
+    "backend:start": "yarn workspace @solanafish/api start",
+    "backend:postinstall": "yarn workspace @solanafish/api postinstall",
+    "backend:dev": "yarn workspace @solanafish/api dev",
+    "backend:lint": "yarn workspace @solanafish/api lint",
+    "backend:test": "yarn workspace @solanafish/api test",
+    "backend:test:unit": "yarn workspace @solanafish/api test:unit",
+    "backend:test:integration": "yarn workspace @solanafish/api test:integration",
+    "backend:reset-db": "yarn workspace @solanafish/api dev:reset-db",
+    "deploy-rinkeby": "yarn workspace @solanafish/contracts deploy-rinkeby",
+    "deploy-polygon": "yarn workspace @solanafish/contracts deploy-polygon",
+    "deploy-mainnet": "yarn workspace @solanafish/contracts deploy-mainnet",
+    "deploy-mumbai": "yarn workspace @solanafish/contracts deploy-mumbai",
+    "deploy-kovanOptimism": "yarn workspace @solanafish/contracts deploy-kovanOptimism",
+    "deploy-optimism": "yarn workspace @solanafish/contracts deploy-optimism",
+    "run-graph-node": "yarn workspace @solanafish/services run-graph-node",
+    "remove-graph-node": "yarn workspace @solanafish/services remove-graph-node",
+    "clean-graph-node": "yarn workspace @solanafish/services clean-graph-node",
+    "postinstall": "husky install"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": []
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^7.0.2"
+  }
+}
