@@ -2,7 +2,7 @@
 
 Tech Stack : NextJS + TypeScript + TailwindCSS + Anchor + NodeJS + Express
 
-The SolanaFish DApp scaffold is meant to be a starting point for developer want to create full blown app including client UI, wallet connection and trivial things already handled for them so they can focus on core business logic.
+The SolanaFish DApp scaffold is meant to be a starting point for developers who want to create full blown app including client UI, wallet connection and trivial things which are already handled for them so that they can focus on core business logic.
 
 LFG 🔥🔥🚀
 
